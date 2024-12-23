@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Skills", link: "#tech" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -106,68 +106,137 @@ export const projects = [
 
 export const testimonials = [
   {
-    quote:
-      "",
+    quote: "",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
+  },
+];
+
+export const companiesFront = [
+  {
+    id: 1,
+    name: "React",
+    img: "/react.svg",
+  },
+  {
+    id: 2,
+    name: "Bootstrap",
+    img: "/bootstrap.svg",
+  },
+  {
+    id: 3,
+    name: "tailwind",
+    img: "/tailwind.svg",
+  },
+  {
+    id: 4,
+    name: "angular",
+    img: "/angular.svg",
+  },
+  {
+    id: 5,
+    name: "next",
+    img: "/next.svg",
   }
 ];
 
-export const companies = [
+export const companiesBack = [
   {
-    id: 8,
+    id: 1,
     name: "JAVA.",
     img: "/java.svg",
   },
   {
-    id: 1,
+    id: 2,
     name: "Spring boot",
     img: "/Spring.svg",
   },
   {
-    id: 11,
+    id: 3,
     name: "PHP",
     img: "/php.svg",
   },
   {
-    id: 2,
+    id: 4,
     name: "Laravel",
     img: "/Laravel.svg",
   },
   {
-    id: 3,
-    name: "Jenkins",
-    img: "/jenkins.svg",
+    id: 5,
+    name: "rest.",
+    img: "/rest.svg",
   },
+];
+
+export const dataBase = [
   {
-    id: 4,
+    id: 1,
     name: "MongoDB",
     img: "/mongodb.svg",
   },
   {
-    id: 5,
+    id: 2,
     name: "Postgres",
     img: "/Postgresql.svg",
   },
   {
-    id: 9,
+    id: 3,
     name: "MySQL",
     img: "/MySQL.svg",
   },
   {
-    id: 10,
+    id: 4,
+    name: "oracle",
+    img: "/oracle.svg",
+  },
+  {
+    id: 5,
+    name: "h2",
+    img: "/h2.svg",
+  } 
+];
+
+export const testing = [
+  {
+    id: 1,
+    name: "Jenkins",
+    img: "/jenkins.svg",
+  },
+  {
+    id: 2,
+    name: "selenium",
+    img: "/selenium.svg",
+  },
+  {
+    id: 3,
     name: "Postman",
     img: "/pos.svg",
   },
+];
+
+export const collaborativeTool = [
   {
-    id: 6,
-    name: "docker.",
-    img: "/dock.svg",
+    id: 1,
+    name: "Git.",
+    img: "/git1.svg",
   },
   {
-    id: 7,
-    name: "Git.",
-    img: "/git.svg",
+    id: 2,
+    name: "docker.",
+    img: "/dock.svg",
+  }
+];
+
+export const operatingSys = [
+  {
+    id: 1,
+    name: "linux",
+    img: "/linux.svg",
+  },
+  {
+    id: 2,
+    name: "windows",
+    img: "/windows.svg",
   },
 ];
 

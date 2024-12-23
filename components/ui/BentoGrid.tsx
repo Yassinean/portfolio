@@ -11,6 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { InfiniteMovingCards } from "./InfiniteCards";
 
 export const BentoGrid = ({
   className,
@@ -52,8 +53,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Spring boot", "Spring Data" , "Spring MVC","Spring Security"];
+  const rightLists = ["ReactJS", "Angular", "Next"];
 
   const [copied, setCopied] = useState(false);
 
