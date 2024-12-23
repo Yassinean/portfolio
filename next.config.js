@@ -1,17 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+//   output: "export",
   reactStrictMode: true,
   images: {
     domains: [
-      'images.unsplash.com',
-      'github.com',
+      "images.unsplash.com",
+      "github.com",
       // Add other image domains you might need
     ],
     unoptimized: true,
   },
   compiler: {
     // Remove console.logs in production
-    removeConsole: process.env.NODE_ENV === 'production',
+    removeConsole: process.env.NODE_ENV === "production",
   },
   // Enable webpack5
   webpack: (config) => {
@@ -22,19 +23,19 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: "/(.*)",
         headers: [
           {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
+            key: "X-Content-Type-Options",
+            value: "nosniff",
           },
           {
-            key: 'X-Frame-Options',
-            value: 'DENY',
+            key: "X-Frame-Options",
+            value: "DENY",
           },
           {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
+            key: "X-XSS-Protection",
+            value: "1; mode=block",
           },
         ],
       },
