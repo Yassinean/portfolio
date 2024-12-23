@@ -227,6 +227,24 @@ export const collaborativeTool = [
   }
 ];
 
+export const ide = [
+  {
+    id: 1,
+    name: "vscode",
+    img: "/vscode.svg",
+  },
+  {
+    id: 2,
+    name: "intellij",
+    img: "/intellij.svg",
+  },
+  {
+    id: 3,
+    name: "eclipse",
+    img: "/eclipse.svg",
+  },
+];
+
 export const operatingSys = [
   {
     id: 1,

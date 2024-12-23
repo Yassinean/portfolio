@@ -2,7 +2,15 @@
 
 import React from "react";
 
-import { collaborativeTool, companiesBack, companiesFront, dataBase, operatingSys, testing } from "@/data";
+import {
+  collaborativeTool,
+  companiesBack,
+  companiesFront,
+  dataBase,
+  ide,
+  operatingSys,
+  testing,
+} from "@/data";
 
 const Clients = () => {
   return (
@@ -66,6 +74,22 @@ const Clients = () => {
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
           {testing.map((company) => (
+            <React.Fragment key={company.id}>
+              <div className="flex md:max-w-60 max-w-32 gap-2">
+                <img
+                  src={company.img}
+                  alt={company.name}
+                  className="md:w-10 w-5"
+                />
+              </div>
+            </React.Fragment>
+          ))}
+        </div>
+        <h3 className="text-xl m-10">
+          <span className="text-purple">IDE</span>
+        </h3>
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
+          {ide.map((company) => (
             <React.Fragment key={company.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
                 <img
